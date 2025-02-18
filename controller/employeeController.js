@@ -1,4 +1,4 @@
-const Employee=require('../models/employee')
+const Employee = require('../models/employee')
 const createEmployee=async(req, res)=>{
     try{
         const{ name, email, phone, city}=req.body
@@ -6,7 +6,7 @@ const createEmployee=async(req, res)=>{
             name, email, phone, city
         })
         await employee.save()
-        res.status(201).json(employees)
+        res.status(201).json(employee)
     }
     catch{
         console.log("error: ", error)
