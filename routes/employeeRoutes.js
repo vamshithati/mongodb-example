@@ -10,5 +10,7 @@ router.get('/allemployees', employeeController.getEmployees)
 
 router.get('/employee/:id', employeeController.singleEmployee)
 
+router.put('/update/:id', employeeController.updateEmployee)
+
 
 module.exports=router
