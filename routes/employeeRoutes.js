@@ -12,5 +12,7 @@ router.get('/employee/:id', employeeController.singleEmployee)
 
 router.put('/update/:id', employeeController.updateEmployee)
 
+router.delete('/delete/:id', employeeController.deleteEmployee)
+
 
 module.exports=router
